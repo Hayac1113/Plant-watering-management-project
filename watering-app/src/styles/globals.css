@@ -1,9 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* .searchBar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
