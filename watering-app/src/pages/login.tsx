@@ -26,14 +26,14 @@ const Login = () => {
       // Navigate home!
       router.push("/");
     } catch (error) {
-      setError("Something went wrong with the request");
+      setError("Your 'username' and 'password' are invalid");
     }
   };
 
   return (
     <>
       <main>
-        <h1>This is the login page</h1>
+        <h1>Please enter your username and password</h1>
         <div>
           <form className="login-form" onSubmit={handleSubmit}>
             <label htmlFor="username">Username</label>
