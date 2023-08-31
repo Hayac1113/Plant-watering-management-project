@@ -1,11 +1,12 @@
-import { Inter } from "next/font/google";
 import React from "react";
 import SearchBar from "@/components/SearchBar";
 
 export default function Home() {
   return (
-    <div>
-      <SearchBar />
-    </div>
+    <main className="h-screen flex items-center justify-center">
+      <div className="">
+        <SearchBar />
+      </div>
+    </main>
   );
 }
