@@ -8,7 +8,7 @@ interface BaseLayoutProps {
 const BaseLayout = ({ children }: BaseLayoutProps) => {
   return (
     <>
-      <main>
+      <main className="bg-lime-200">
         {children}
         <div className="flex justify-between">
           <NavigationBar />

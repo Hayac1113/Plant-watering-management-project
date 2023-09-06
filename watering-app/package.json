@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.1",
+    "@next/font": "^13.4.19",
     "@radix-ui/react-popover": "^1.0.6",
     "@radix-ui/react-slot": "^1.0.2",
     "@types/node": "20.5.7",

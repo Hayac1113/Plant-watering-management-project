@@ -55,13 +55,13 @@ const PlantList = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 border-solid border-5">
+      <div className="grid grid-cols-3 border-solid border-5 font-teko">
         {plants !== null &&
           plants.map((plant) => {
             console.log(plant);
             return (
               <div
-                className="grid grid-cols-4 border-solid border-5"
+                className="grid grid-cols-4 border-solid border-5 font-teko"
                 key={plant.id}
               >
                 <h2>{plant.id}</h2>

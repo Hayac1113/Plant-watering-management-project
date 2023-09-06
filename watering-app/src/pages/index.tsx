@@ -6,7 +6,7 @@ import BaseLayout from "@/components/BaseLayout";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center">
+    <main className="min-h-screen flex items-center justify-center bg-lime-200 font-teko">
       <div className="grid ">
         <BaseLayout children={undefined} />
         <PlantList />

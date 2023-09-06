@@ -22,9 +22,9 @@ const NavigationBar = () => {
   };
 
   return (
-    <nav className="navigation">
+    <nav className="font-teko">
       <Link href="/">
-        <h1>Welcome to your plant watering management</h1>
+        <h1 className="font-teko">Welcome to your plant watering management</h1>
       </Link>
       <div className="flex justify-between border-solid border-5 ">
         <CustomLink href="/" text="Homepage" variant="primary" />
