@@ -55,25 +55,27 @@ const PlantList = () => {
 
   return (
     <>
-      {plants !== null &&
-        plants.map((plant) => {
-          console.log(plant);
-          return (
-            <div
-              className="grid grid-cols-4 border-solid border-5"
-              key={plant.id}
-            >
-              <h2>{plant.id}</h2>
-              {plant.default_image !== null && (
-                <img
-                  src={plant.default_image.small_url}
-                  alt={plant.common_name}
-                />
-              )}
-              <h2>{plant.common_name}</h2>
-            </div>
-          );
-        })}
+      <div className="grid grid-cols-3 border-solid border-5">
+        {plants !== null &&
+          plants.map((plant) => {
+            console.log(plant);
+            return (
+              <div
+                className="grid grid-cols-4 border-solid border-5"
+                key={plant.id}
+              >
+                <h2>{plant.id}</h2>
+                {plant.default_image !== null && (
+                  <img
+                    src={plant.default_image.small_url}
+                    alt={plant.common_name}
+                  />
+                )}
+                <h4>{plant.common_name}</h4>
+              </div>
+            );
+          })}
+      </div>
     </>
   );
 };

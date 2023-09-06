@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import axios from "axios";
+import BaseLayout from "@/components/BaseLayout";
 
 const registerValidation = z.object({
   username: z.string().min(5),
@@ -21,7 +22,7 @@ const Register = () => {
         password: data.password,
       });
       // Navigate to home after successful created
-        router.push("/");
+      router.push("/");
       console.log("User is created:", response.data);
     } catch (err) {
       console.error("Something went wrong:", err);
@@ -38,14 +39,15 @@ const Register = () => {
 
   return (
     <>
-      <main className="content">
+      <BaseLayout children={undefined} />
+      <main className="flex justify-between">
         <form onSubmit={handleSubmit(onSubmit)}>
           <label htmlFor="username">Username</label>
           <input
             {...register("username")}
             type="text"
             id="username"
-            placeholder="Min. 5 characters"
+            placeholder=" Min. 5 characters"
           />
           {errors.username && <p>{errors.username.message}</p>}
 
@@ -54,7 +56,7 @@ const Register = () => {
             {...register("password")}
             type="password"
             id="password"
-            placeholder="Min. 10 characters"
+            placeholder=" Min. 10 characters"
           />
           {errors.password && <p>{errors.password.message}</p>}
 

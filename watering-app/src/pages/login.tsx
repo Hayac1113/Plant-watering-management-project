@@ -1,3 +1,4 @@
+import BaseLayout from "@/components/BaseLayout";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -33,6 +34,7 @@ const Login = () => {
   return (
     <>
       <main>
+        <BaseLayout children={undefined} />
         <h1>Please enter your username and password</h1>
         <div>
           <form className="login-form" onSubmit={handleSubmit}>
